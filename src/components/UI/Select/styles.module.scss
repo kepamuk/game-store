@@ -1,0 +1,18 @@
+@import '../../../styles/pallete';
+
+.label {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.select {
+    width: 100%;
+    margin-top: 8px;
+    color: white;
+    background-color: $backgroundColor;
+    height: 40px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    outline: none;
+}

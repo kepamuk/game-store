@@ -1,0 +1,13 @@
+@import '../../../styles/pallete';
+
+.header {
+    width: 100%;
+    background: $layoutBackgroundColor;
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 24px;
+    }
+}

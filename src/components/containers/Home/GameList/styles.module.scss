@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+
+.textCenter {
+    text-align: center;
+    height: 100vh;
+    opacity: 1;
+    animation: fadein 0.5s linear 1 normal forwards;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    & .game_list {
+        display: block;
+        max-width: 542px;
+        margin: 0 auto;
+        padding: 0 16px;
+        list-style-type: none;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+
+        @media (min-width: $tablet) {
+            max-width: 900px;
+        }
+
+        @media (min-width: $desktop) {
+            max-width: $desktop;
+        }
+
+        &_item {
+            margin-bottom: 24px;
+            transition: all 0.2s ease-in-out;
+
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+}

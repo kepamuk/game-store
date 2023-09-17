@@ -1,0 +1,22 @@
+@import '../../../styles/pallete';
+
+.footer {
+    width: 100%;
+    background: $layoutBackgroundColor;
+
+
+    &_container {
+        display: flex;
+        align-items: start;
+        padding: 40px 24px;
+        max-width: 1480px;
+        margin: 0 auto;
+        gap: 100px;
+    }
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
